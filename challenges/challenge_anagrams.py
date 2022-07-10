@@ -5,7 +5,8 @@ def is_anagram(first_string, second_string):
 
     for elem in first:
         if elem in second:
-            return second.remove(elem)
-        return False
+            second.remove(elem)
+        else:
+            return False
 
     return len(second) == 0
